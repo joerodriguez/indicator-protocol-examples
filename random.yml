@@ -13,7 +13,7 @@ layout:
   sections:
   - title: Our section
     indicators:
-    - credhub_cpu_empty_labels
+    - router_uptime_rate
 indicators:
 - name: credhub_cpu_empty_labels
   promql: system_cpu_user{source_id="bosh-system-metrics-forwarder",job="credhub"}
