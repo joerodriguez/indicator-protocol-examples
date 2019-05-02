@@ -25,7 +25,6 @@ indicators:
   presentation:
     chartType: status
     currentValue: false
-    frequency: 600
     labels: []
     units: megabits
   documentation:
