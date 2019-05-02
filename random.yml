@@ -9,11 +9,6 @@ metadata:
   deployment: Examples
   description: This is a dashboard to test the various UI interactions of Healthwatch and Indicator Protocol. This dashboard was created from https://github.com/joerodriguez/indicator-protocol-examples and will not appear in any other environment.
 
-layout:
-  sections:
-  - title: Our section
-    indicators:
-    - router_uptime_rate
 indicators:
 - name: credhub_cpu_empty_labels
   promql: system_cpu_user{source_id="bosh-system-metrics-forwarder",job="credhub"}
@@ -51,8 +46,8 @@ indicators:
     title: Healthwatch events published
 - name: router_uptime_rate
   promql: rate(uptime{source_id="gorouter"}[$step])
-  presentation:
-    frequency: 1
   thresholds:
   - level: warning
     gte: 1
+  documentation:
+    title: Dynamic Range
