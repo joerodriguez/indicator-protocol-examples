@@ -9,6 +9,11 @@ metadata:
   deployment: Examples
   description: This is a dashboard to test the various UI interactions of Healthwatch and Indicator Protocol. This dashboard was created from https://github.com/joerodriguez/indicator-protocol-examples and will not appear in any other environment.
 
+layout:
+  sections:
+  - title: Our section
+    indicators:
+    - credhub_cpu_empty_labels
 indicators:
 - name: credhub_cpu_empty_labels
   promql: system_cpu_user{source_id="bosh-system-metrics-forwarder",job="credhub"}
