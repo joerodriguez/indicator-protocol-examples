@@ -49,7 +49,5 @@ indicators:
   thresholds:
   - level: warning
     gte: 1
-  presentation:
-    frequency: 1
   documentation:
     title: Dynamic Range
