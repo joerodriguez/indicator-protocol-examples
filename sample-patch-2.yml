@@ -6,7 +6,7 @@ match:
     name: my-other-component
 operations:
 - type: replace
-  path: /indicators/name=very_good_indicator/presentation
+  path: /indicators/name=very_good_indicator/presentation?
   value:
     chartType: status
     currentValue: false
