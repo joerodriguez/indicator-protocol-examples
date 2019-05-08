@@ -1,0 +1,13 @@
+---
+apiVersion: v0/patch
+
+match:
+  product:
+    name: my-other-component
+operations:
+- type: replace
+  path: /indicators/name="very_good_indicator"/presentation
+  value:
+    chartType: status
+    currentValue: false
+    frequency: 0
