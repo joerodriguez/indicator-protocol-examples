@@ -12,7 +12,7 @@ operations:
   - level: warning
     gt: 0.3
 
-- type: replace
+- type: add
   path: /indicators/name=credhub_cpu/serviceLevel
   value:
     objective: 1
