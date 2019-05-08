@@ -30,8 +30,6 @@ indicators:
   thresholds:
   - level: warning
     gte: 0
-  serviceLevel:
-    objective: 25
   presentation:
     currentValue: false
     frequency: 600
