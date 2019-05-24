@@ -39,7 +39,7 @@ indicators:
     recommendedResponse: Scale up Credhub instances
     thresholdNote: env specific
 - name: events_published_step
-  promql: sum(sum_over_time(events_published{source_id="healthwatch-forwarder",deployment="healthwatch-v1-5"}[$step]))
+  promql: sum(sum_over_time(events_published{source_id="healthwatch-forwarder",deployment="healthwatch-v1-5"}[$steper]))
   presentation:
     currentValue: true
   documentation:
